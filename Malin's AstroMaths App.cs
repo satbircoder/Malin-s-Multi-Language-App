@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Malin_s_AstroMath_App.Properties;
+using System;
+using System.Diagnostics.Tracing;
+using System.Drawing;
+using System.Linq;
 using System.ServiceModel;
 using System.Windows.Forms;
 
@@ -192,6 +196,80 @@ namespace Malin_s_AstroMath_App
             }
         }
 
-        
+        private void checkBoxMode_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxMode.Text == "Night Mode Off")
+            {
+                BackgroundImage = null;
+                BackColor = Color.FromArgb(20,20,20);
+                dataViewCalculations.BackgroundColor = Color.DarkGray;
+                
+                byte r = (byte)(255 - BackColor.R);
+                byte g = (byte)(255 - BackColor.G);
+                byte b = (byte)(255 - BackColor.B);
+                StatusBar.ForeColor = Color.FromArgb(r,g,b);
+                foreach (Control ctrl in this.Controls)
+                {
+                    ctrl.ForeColor = Color.FromArgb(r, g, b);
+                }
+                menuStripMalin.ForeColor = Color.Black;
+                buttonFrench.ForeColor = Color.Black;
+                StatusBar.BackColor = BackColor;
+                checkBoxMode.Text = "Night Mode On";
+            }
+            else
+            {
+                ResetFormat();
+                checkBoxMode.Text = "Night Mode Off";
+            }
+        }
+
+        private void selectColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            var result = colorDialog.ShowDialog();
+            if(result == DialogResult.OK)
+            {
+                BackgroundImage = null;
+                BackColor = colorDialog.Color;
+                byte r = (byte)(255 - BackColor.R);
+                byte g = (byte)(255 - BackColor.G);
+                byte b = (byte)(255 - BackColor.B);
+                foreach(Control ctrl in this.Controls)
+                {
+                    ctrl.ForeColor = Color.FromArgb(r,g,b);
+                }
+                menuStripMalin.ForeColor = Color.Black;
+            }
+        }
+        private void ResetFormat()
+        {
+           
+            BackgroundImage = null;
+            BackgroundImage = Resources.happy_face;
+            foreach (var textBox in Controls.OfType<TextBox>())
+            {
+                textBox.ForeColor = Color.Black;
+            }
+            foreach (var groupBox in Controls.OfType<GroupBox>())
+            {
+                groupBox.ForeColor = Color.Black;
+            }
+            foreach (var buttons in Controls.OfType<Button>())
+            {
+                buttons.ForeColor = Color.Black;
+
+            }
+            StatusBar.BackColor = Color.Silver;
+            StatusBar.ForeColor = Color.Black;
+            dataViewCalculations.BackgroundColor = Color.Silver;
+            menuStripMalin.ForeColor = Color.Black;
+        }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetFormat();
+            checkBoxMode.Text = "Night Mode Off";
+        }
     }
 }
