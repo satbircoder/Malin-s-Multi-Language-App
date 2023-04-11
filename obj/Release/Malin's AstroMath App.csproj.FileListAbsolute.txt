@@ -1,0 +1,11 @@
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Release\Malin's AstroMath App.exe.config
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Release\Malin's AstroMath App.exe
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Release\Malin's AstroMath App.pdb
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin's AstroMath App.csproj.AssemblyReference.cache
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin's AstroMath App.csproj.SuggestedBindingRedirects.cache
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin_s_AstroMath_App.AstroMathApp.resources
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin_s_AstroMath_App.Properties.Resources.resources
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin's AstroMath App.csproj.GenerateResource.cache
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin's AstroMath App.csproj.CoreCompileInputs.cache
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin's AstroMath App.exe
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Release\Malin's AstroMath App.pdb
