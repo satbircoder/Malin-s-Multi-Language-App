@@ -119,99 +119,106 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="selectColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 20</value>
+    <value>84, 20</value>
   </data>
   <data name="selectColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Choisissez la couleur</value>
+    <value>Wähle Farbe</value>
   </data>
   <data name="resetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 20</value>
+    <value>128, 20</value>
   </data>
   <data name="resetToolStripMenuItem.Text" xml:space="preserve">
-    <value>Réinitialiser le format</value>
-  </data>
-  <data name="StarVelocityColumn.HeaderText" xml:space="preserve">
-    <value>Vitesse des étoiles</value>
-  </data>
-  <data name="StarDistanceColumn.HeaderText" xml:space="preserve">
-    <value>Distance étoile</value>
-  </data>
-  <data name="TemperatureColumn.HeaderText" xml:space="preserve">
-    <value>Conversion de température</value>
-  </data>
-  <data name="EventHorizonColumn.HeaderText" xml:space="preserve">
-    <value>Horizon des événements</value>
+    <value>Format zurücksetzen</value>
   </data>
   <data name="labelObservedWaveLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 13</value>
+    <value>130, 13</value>
   </data>
   <data name="labelObservedWaveLength.Text" xml:space="preserve">
-    <value>Longueur d'onde observée</value>
+    <value>Beobachtete Wellenlänge</value>
   </data>
   <data name="labelWaveLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
+    <value>89, 13</value>
   </data>
   <data name="labelWaveLength.Text" xml:space="preserve">
-    <value>Longueur d'onde de repos</value>
+    <value>Ruhewellenlänge</value>
   </data>
   <data name="buttonStarVelocity.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnung</value>
   </data>
   <data name="labelArcsecondAngle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 13</value>
+    <value>121, 13</value>
   </data>
   <data name="labelArcsecondAngle.Text" xml:space="preserve">
-    <value>Angle des secondes d'arc</value>
+    <value>Bogensekunden Winkel</value>
   </data>
   <data name="buttonStarDistance.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnung</value>
+  </data>
+  <data name="labelCelsius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
   </data>
   <data name="labelCelsius.Text" xml:space="preserve">
-    <value>Température Celsius</value>
+    <value>Celsius-Temperatur</value>
   </data>
   <data name="buttonKelvinTemp.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnung</value>
   </data>
   <data name="labelBlackholeMass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
+    <value>146, 13</value>
   </data>
   <data name="labelBlackholeMass.Text" xml:space="preserve">
-    <value>Masse du trou noir</value>
+    <value>Masse des Schwarzen Lochs</value>
   </data>
   <data name="buttonEventHorizon.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnung</value>
+  </data>
+  <data name="StatusBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
+  <data name="StatusBar.Text" xml:space="preserve">
+    <value>Nachricht:</value>
   </data>
   <data name="groupBoxStarVelocity.Text" xml:space="preserve">
-    <value>Vitesse des étoiles</value>
+    <value>Sterngeschwindigkeit</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonFrench.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="buttonFrench.Text" xml:space="preserve">
-    <value>Français</value>
+    <value>Französisch</value>
   </data>
   <data name="buttonEnglish.Text" xml:space="preserve">
-    <value>Anglais Royaume-Uni)</value>
+    <value>Englisch UK)</value>
   </data>
   <data name="buttonGerman.Text" xml:space="preserve">
-    <value>allemand</value>
+    <value>Deutsch</value>
   </data>
   <data name="groupBoxStarDistance.Text" xml:space="preserve">
-    <value>Distance étoile</value>
+    <value>Sternenentfernung</value>
   </data>
   <data name="groupBoxKelvin.Text" xml:space="preserve">
-    <value>Calculatrice Kelvin</value>
+    <value>Kelvin-Rechner</value>
   </data>
   <data name="groupBoxEventHorizon.Text" xml:space="preserve">
-    <value>Horizon des événements</value>
-  </data>
-  <data name="checkBoxMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 129</value>
-  </data>
-  <data name="checkBoxMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 23</value>
+    <value>Ereignishorizont</value>
   </data>
   <data name="checkBoxMode.Text" xml:space="preserve">
-    <value>Mode nuit désactivé</value>
+    <value>Nachtmodus aus</value>
+  </data>
+  <data name="StarVelocityColumn.HeaderText" xml:space="preserve">
+    <value>Sterngeschwindigkeit</value>
+  </data>
+  <data name="StarDistanceColumn.HeaderText" xml:space="preserve">
+    <value>Sternenentfernung</value>
+  </data>
+  <data name="TemperatureColumn.HeaderText" xml:space="preserve">
+    <value>Temperaturumwandlung</value>
+  </data>
+  <data name="EventHorizonColumn.HeaderText" xml:space="preserve">
+    <value>Ereignishorizont</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Application Astro Math de Malin</value>
+    <value>Malins Astro Math App</value>
   </data>
 </root>

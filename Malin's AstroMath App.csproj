@@ -56,6 +56,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Malin%27s AstroMaths App.de-DE.resx">
+      <DependentUpon>Malin%27s AstroMaths App.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Malin%27s AstroMaths App.en-GB.resx">
+      <DependentUpon>Malin%27s AstroMaths App.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Malin%27s AstroMaths App.fr-FR.resx">
       <DependentUpon>Malin%27s AstroMaths App.cs</DependentUpon>
     </EmbeddedResource>

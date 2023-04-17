@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.ServiceModel;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Malin_s_AstroMath_App
@@ -13,7 +14,9 @@ namespace Malin_s_AstroMath_App
     {
         public AstroMathApp()
         {
+            
             InitializeComponent();
+            
         }
         private IAstroContract connection()
         {
@@ -27,10 +30,6 @@ namespace Malin_s_AstroMath_App
 
         private void AstroMathApp_Load(object sender, EventArgs e)
         {
-            dataViewCalculations.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataViewCalculations.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataViewCalculations.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataViewCalculations.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataViewCalculations.AllowUserToAddRows = false;
         }
 
@@ -218,6 +217,7 @@ namespace Malin_s_AstroMath_App
                 menuStripMalin.ForeColor = Color.Black;
                 buttonFrench.ForeColor = Color.Black;
                 StatusBar.BackColor = BackColor;
+                dataViewCalculations.ForeColor = Color.Black;
                 checkBoxMode.Text = "Night Mode On";
             }
             else
@@ -243,6 +243,7 @@ namespace Malin_s_AstroMath_App
                     ctrl.ForeColor = Color.FromArgb(r,g,b);
                 }
                 menuStripMalin.ForeColor = Color.Black;
+                dataViewCalculations.ForeColor = Color.Black;
             }
         }
         private void ResetFormat()
@@ -267,6 +268,7 @@ namespace Malin_s_AstroMath_App
             StatusBar.ForeColor = Color.Black;
             dataViewCalculations.BackgroundColor = Color.Silver;
             menuStripMalin.ForeColor = Color.Black;
+            dataViewCalculations.ForeColor = Color.Black;
         }
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -310,6 +312,29 @@ namespace Malin_s_AstroMath_App
         private void textBoxBlackholeMass_KeyPress(object sender, KeyPressEventArgs e)
         {
             TextBoxKeyPress(sender, e);
+        }
+        private void ChangeLanguage(string language)
+        {
+            switch (language)
+            {
+                case "English":
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-GB");
+                break;
+                case "French":
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+                    break;
+                case "German":
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
+                    break;
+            }
+            Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void buttonFrench_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("French");
+            dataViewCalculations.AllowUserToAddRows = false;
         }
     }
 }

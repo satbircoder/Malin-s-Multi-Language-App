@@ -9,6 +9,12 @@ E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin's AstroMath App.csproj.CoreCompileInputs.cache
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin's AstroMath App.exe
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin's AstroMath App.pdb
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Debug\de-DE\Malin's AstroMath App.resources.dll
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Debug\fr-FR\Malin's AstroMath App.resources.dll
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin_s_AstroMath_App.AstroMathApp.de-DE.resources
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin_s_AstroMath_App.AstroMathApp.fr-FR.resources
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\de-DE\Malin's AstroMath App.resources.dll
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\fr-FR\Malin's AstroMath App.resources.dll
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Debug\en-GB\Malin's AstroMath App.resources.dll
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin_s_AstroMath_App.AstroMathApp.en-GB.resources
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\en-GB\Malin's AstroMath App.resources.dll

@@ -259,6 +259,7 @@
             resources.ApplyResources(this.buttonFrench, "buttonFrench");
             this.buttonFrench.Name = "buttonFrench";
             this.buttonFrench.UseVisualStyleBackColor = true;
+            this.buttonFrench.Click += new System.EventHandler(this.buttonFrench_Click);
             // 
             // buttonEnglish
             // 
@@ -397,10 +398,6 @@
         private System.Windows.Forms.MenuStrip menuStripMalin;
         private System.Windows.Forms.ToolStripMenuItem selectColorToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataViewCalculations;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StarVelocityColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StarDistanceColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TemperatureColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EventHorizonColumn;
         private System.Windows.Forms.Button buttonGerman;
         private System.Windows.Forms.Button buttonEnglish;
         private System.Windows.Forms.Button buttonFrench;
@@ -432,6 +429,10 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.TextBox textBoxUnits;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StarVelocityColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StarDistanceColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TemperatureColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EventHorizonColumn;
     }
 }
 

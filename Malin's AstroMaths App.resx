@@ -121,6 +121,18 @@
     <value>17, 3</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="selectColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="selectColorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Select Color</value>
+  </data>
+  <data name="resetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="resetToolStripMenuItem.Text" xml:space="preserve">
+    <value>Reset Format</value>
+  </data>
   <data name="menuStripMalin.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -145,18 +157,6 @@
   </data>
   <data name="&gt;&gt;menuStripMalin.ZOrder" xml:space="preserve">
     <value>12</value>
-  </data>
-  <data name="selectColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="selectColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Select Color</value>
-  </data>
-  <data name="resetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 20</value>
-  </data>
-  <data name="resetToolStripMenuItem.Text" xml:space="preserve">
-    <value>Reset Format</value>
   </data>
   <metadata name="StarVelocityColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -588,6 +588,12 @@
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>155, 3</value>
   </metadata>
+  <data name="StatusBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="StatusBar.Text" xml:space="preserve">
+    <value>Message:</value>
+  </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 516</value>
   </data>
@@ -611,12 +617,6 @@
   </data>
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="StatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="StatusBar.Text" xml:space="preserve">
-    <value>Message:</value>
   </data>
   <data name="groupBoxStarVelocity.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -798,81 +798,6 @@
   <data name="groupBoxEventHorizon.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;textBoxUnits.Name" xml:space="preserve">
-    <value>textBoxUnits</value>
-  </data>
-  <data name="&gt;&gt;textBoxUnits.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxUnits.Parent" xml:space="preserve">
-    <value>groupBoxEventHorizon</value>
-  </data>
-  <data name="&gt;&gt;textBoxUnits.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxPower.Name" xml:space="preserve">
-    <value>textBoxPower</value>
-  </data>
-  <data name="&gt;&gt;textBoxPower.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPower.Parent" xml:space="preserve">
-    <value>groupBoxEventHorizon</value>
-  </data>
-  <data name="&gt;&gt;textBoxPower.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxExpo.Name" xml:space="preserve">
-    <value>textBoxExpo</value>
-  </data>
-  <data name="&gt;&gt;textBoxExpo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxExpo.Parent" xml:space="preserve">
-    <value>groupBoxEventHorizon</value>
-  </data>
-  <data name="&gt;&gt;textBoxExpo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxMultiply.Name" xml:space="preserve">
-    <value>textBoxMultiply</value>
-  </data>
-  <data name="&gt;&gt;textBoxMultiply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxMultiply.Parent" xml:space="preserve">
-    <value>groupBoxEventHorizon</value>
-  </data>
-  <data name="&gt;&gt;textBoxMultiply.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBoxEventHorizon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="groupBoxEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 395</value>
-  </data>
-  <data name="groupBoxEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 109</value>
-  </data>
-  <data name="groupBoxEventHorizon.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="groupBoxEventHorizon.Text" xml:space="preserve">
-    <value>Event Horizon</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEventHorizon.Name" xml:space="preserve">
-    <value>groupBoxEventHorizon</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEventHorizon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEventHorizon.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEventHorizon.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="textBoxUnits.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -981,6 +906,33 @@
   <data name="&gt;&gt;textBoxMultiply.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="groupBoxEventHorizon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 395</value>
+  </data>
+  <data name="groupBoxEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 109</value>
+  </data>
+  <data name="groupBoxEventHorizon.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="groupBoxEventHorizon.Text" xml:space="preserve">
+    <value>Event Horizon</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.Name" xml:space="preserve">
+    <value>groupBoxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="checkBoxMode.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -1041,6 +993,9 @@
   <data name="&gt;&gt;contextMenuStrip2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr-FR</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
