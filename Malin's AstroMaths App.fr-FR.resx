@@ -117,7 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelObservedWaveLength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 13</value>
+  </data>
+  <data name="labelObservedWaveLength.Text" xml:space="preserve">
+    <value>Longueur d'onde observée</value>
+  </data>
   <data name="buttonStarVelocity.Text" xml:space="preserve">
     <value>Vitesse des étoiles</value>
+  </data>
+  <data name="buttonKelvinTemp.Text" xml:space="preserve">
+    <value>Température Kelvin</value>
+  </data>
+  <data name="groupBoxStarVelocity.Text" xml:space="preserve">
+    <value>Vitesse des étoiles</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Application Astro Math de Malin</value>
   </data>
 </root>
