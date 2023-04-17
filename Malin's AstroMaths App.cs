@@ -2,6 +2,7 @@
 using System;
 using System.Diagnostics.Tracing;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.ServiceModel;
 using System.Windows.Forms;
@@ -162,9 +163,11 @@ namespace Malin_s_AstroMath_App
         {
             if (textBoxBlackholeMass.Text != "")
             {
-                var blkholeMass = connection().EventHorizon(double.Parse(textBoxBlackholeMass.Text));
+                var blackholeInput =double.Parse(textBoxBlackholeMass.Text) * Math.Pow(10, double.Parse(textBoxPower.Text));
+                var blkholeMass = connection().EventHorizon(blackholeInput);
                 if (blkholeMass.Item3.Equals(true))
                 {
+                    var blkholeResult = string.Format("{0:E2}", blkholeMass.Item1);
                     for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)
                     {
                         if (dataViewCalculations.Rows.Count == 0)
@@ -172,12 +175,12 @@ namespace Malin_s_AstroMath_App
                             DataGridViewRow newRow = new DataGridViewRow();
                             newRow.CreateCells(dataViewCalculations);
                             dataViewCalculations.Rows.Insert(i, newRow);
-                            dataViewCalculations.Rows[i].Cells[3].Value = (blkholeMass.Item1 + blkholeMass.Item2);
+                            dataViewCalculations.Rows[i].Cells[3].Value = (blkholeResult +blkholeMass.Item2);
                             break;
                         }
                         if (dataViewCalculations.Rows[i].Cells[3].Value == null)
                         {
-                            dataViewCalculations.Rows[i].Cells[3].Value = (blkholeMass.Item1 + blkholeMass.Item2);
+                            dataViewCalculations.Rows[i].Cells[3].Value = (blkholeResult + blkholeMass.Item2);
                             break;
                         }
 
@@ -186,7 +189,7 @@ namespace Malin_s_AstroMath_App
                             DataGridViewRow newRow = new DataGridViewRow();
                             newRow.CreateCells(dataViewCalculations);
                             dataViewCalculations.Rows.Insert(i + 1, newRow);
-                            dataViewCalculations.Rows[i + 1].Cells[3].Value = (blkholeMass.Item1 + blkholeMass.Item2);
+                            dataViewCalculations.Rows[i + 1].Cells[3].Value = (blkholeResult +blkholeMass.Item2);
                             break;
                         }
                     }
@@ -270,6 +273,43 @@ namespace Malin_s_AstroMath_App
         {
             ResetFormat();
             checkBoxMode.Text = "Night Mode Off";
+        }
+        private void TextBoxKeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.')) { 
+            e.Handled = true;
+                StatusBar.Text = "Invalid Key Pressed";
+            }
+            if((e.KeyChar== '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled= true;
+                StatusBar.Text = "Invalid Key Pressed";
+            }
+        }
+
+        private void textBoxObsLength_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxKeyPress(sender, e);
+        }
+
+        private void textBoxRestLength_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxKeyPress(sender, e);
+        }
+
+        private void textBoxArcsecondAngle_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxKeyPress(sender, e);
+        }
+
+        private void textBoxCelsius_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxKeyPress(sender, e);
+        }
+
+        private void textBoxBlackholeMass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxKeyPress(sender, e);
         }
     }
 }
