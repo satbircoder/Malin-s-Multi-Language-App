@@ -127,7 +127,7 @@
     <value>Couleur</value>
   </data>
   <data name="crash message" xml:space="preserve">
-    <value>Une erreur s'est produite. Veuillez réessayer</value>
+    <value>Quelque chose s'est mal passé, veuillez vérifier l'état de fonctionnement du serveur</value>
   </data>
   <data name="Custom Color" xml:space="preserve">
     <value>Couleur personnalisée</value>
@@ -156,6 +156,9 @@
   <data name="Night Mode On" xml:space="preserve">
     <value>Mode nuit activé</value>
   </data>
+  <data name="No" xml:space="preserve">
+    <value>Non</value>
+  </data>
   <data name="Operation Cancel" xml:space="preserve">
     <value>L'utilisateur a annulé l'opération</value>
   </data>
@@ -167,5 +170,8 @@
   </data>
   <data name="System Information" xml:space="preserve">
     <value>Informations système</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
   </data>
 </root>

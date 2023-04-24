@@ -11,16 +11,16 @@ namespace Malin_s_AstroMath_App
     internal interface IAstroContract
     {
         [OperationContract]
-        Tuple<double, string, bool> StarVelocity(double observedLength, double restLength);
+        Tuple<double,bool> StarVelocity(double observedLength, double restLength);
 
         [OperationContract]
-        Tuple<double, string, bool> StarDistance(double arcsec);
+        Tuple<double,bool> StarDistance(double arcsec);
 
         [OperationContract]
 
-        Tuple<double, string, bool> KelvinTemperature(double celsius);
+        Tuple<double,bool> KelvinTemperature(double celsius);
         [OperationContract]
 
-        Tuple<double, string, bool> EventHorizon(double blackHoleMass);
+        Tuple<double,bool> EventHorizon(double blackHoleMass);
     }
 }

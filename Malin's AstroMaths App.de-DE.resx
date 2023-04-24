@@ -130,6 +130,18 @@
   <data name="resetToolStripMenuItem.Text" xml:space="preserve">
     <value>Format zurücksetzen</value>
   </data>
+  <data name="StarVelocityColumn.HeaderText" xml:space="preserve">
+    <value>Sterngeschwindigkeit</value>
+  </data>
+  <data name="StarDistanceColumn.HeaderText" xml:space="preserve">
+    <value>Sternenentfernung</value>
+  </data>
+  <data name="TemperatureColumn.HeaderText" xml:space="preserve">
+    <value>Temperaturumwandlung</value>
+  </data>
+  <data name="EventHorizonColumn.HeaderText" xml:space="preserve">
+    <value>Ereignishorizont</value>
+  </data>
   <data name="labelObservedWaveLength.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 13</value>
   </data>
@@ -142,8 +154,17 @@
   <data name="labelWaveLength.Text" xml:space="preserve">
     <value>Ruhewellenlänge</value>
   </data>
+  <data name="textBoxObsLength.ToolTip" xml:space="preserve">
+    <value>Beobachtete Wellenlänge eingeben</value>
+  </data>
+  <data name="textBoxRestLength.ToolTip" xml:space="preserve">
+    <value>Geben Sie die Ruhewellenlänge ein</value>
+  </data>
   <data name="buttonStarVelocity.Text" xml:space="preserve">
     <value>Berechnung</value>
+  </data>
+  <data name="buttonStarVelocity.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um die Sterngeschwindigkeit zu berechnen</value>
   </data>
   <data name="labelArcsecondAngle.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 13</value>
@@ -151,8 +172,14 @@
   <data name="labelArcsecondAngle.Text" xml:space="preserve">
     <value>Bogensekunden Winkel</value>
   </data>
+  <data name="textBoxArcsecondAngle.ToolTip" xml:space="preserve">
+    <value>Bogensekundenwinkel eingeben</value>
+  </data>
   <data name="buttonStarDistance.Text" xml:space="preserve">
     <value>Berechnung</value>
+  </data>
+  <data name="buttonStarDistance.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um die Sternenentfernung zu berechnen</value>
   </data>
   <data name="labelCelsius.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 13</value>
@@ -160,8 +187,14 @@
   <data name="labelCelsius.Text" xml:space="preserve">
     <value>Celsius-Temperatur</value>
   </data>
+  <data name="textBoxCelsius.ToolTip" xml:space="preserve">
+    <value>Geben Sie die Temperatur in Celsius ein</value>
+  </data>
   <data name="buttonKelvinTemp.Text" xml:space="preserve">
     <value>Berechnung</value>
+  </data>
+  <data name="buttonKelvinTemp.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um die Temperatur zu berechnen</value>
   </data>
   <data name="labelBlackholeMass.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 13</value>
@@ -169,8 +202,14 @@
   <data name="labelBlackholeMass.Text" xml:space="preserve">
     <value>Masse des Schwarzen Lochs</value>
   </data>
+  <data name="textBoxBlackholeMass.ToolTip" xml:space="preserve">
+    <value>Geben Sie die Masse des Schwarzen Lochs ein</value>
+  </data>
   <data name="buttonEventHorizon.Text" xml:space="preserve">
     <value>Berechnung</value>
+  </data>
+  <data name="buttonEventHorizon.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um den Ereignishorizont zu berechnen</value>
   </data>
   <data name="StatusBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 17</value>
@@ -188,11 +227,20 @@
   <data name="buttonFrench.Text" xml:space="preserve">
     <value>Französisch</value>
   </data>
+  <data name="buttonFrench.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um die Sprache auf Französisch zu ändern</value>
+  </data>
   <data name="buttonEnglish.Text" xml:space="preserve">
     <value>Englisch UK)</value>
   </data>
+  <data name="buttonEnglish.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um die Sprache auf Englisch zu ändern</value>
+  </data>
   <data name="buttonGerman.Text" xml:space="preserve">
     <value>Deutsch</value>
+  </data>
+  <data name="buttonGerman.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um die Sprache auf Deutsch zu ändern</value>
   </data>
   <data name="groupBoxStarDistance.Text" xml:space="preserve">
     <value>Sternenentfernung</value>
@@ -206,17 +254,8 @@
   <data name="checkBoxMode.Text" xml:space="preserve">
     <value>Nachtmodus aus</value>
   </data>
-  <data name="StarVelocityColumn.HeaderText" xml:space="preserve">
-    <value>Sterngeschwindigkeit</value>
-  </data>
-  <data name="StarDistanceColumn.HeaderText" xml:space="preserve">
-    <value>Sternenentfernung</value>
-  </data>
-  <data name="TemperatureColumn.HeaderText" xml:space="preserve">
-    <value>Temperaturumwandlung</value>
-  </data>
-  <data name="EventHorizonColumn.HeaderText" xml:space="preserve">
-    <value>Ereignishorizont</value>
+  <data name="checkBoxMode.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier, um den App-Modus zu ändern</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Malins Astro Math App</value>

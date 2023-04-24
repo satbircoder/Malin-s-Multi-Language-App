@@ -127,7 +127,7 @@
     <value>Color</value>
   </data>
   <data name="crash message" xml:space="preserve">
-    <value>Something Went Wrong Please Try Again</value>
+    <value>Something Went Wrong Please Check Server Running Status </value>
   </data>
   <data name="Custom Color" xml:space="preserve">
     <value>Custom Color</value>

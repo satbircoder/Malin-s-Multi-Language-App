@@ -154,6 +154,12 @@
   <data name="labelWaveLength.Text" xml:space="preserve">
     <value>Longueur d'onde de repos</value>
   </data>
+  <data name="textBoxObsLength.ToolTip" xml:space="preserve">
+    <value>Entrer la longueur d'onde observée</value>
+  </data>
+  <data name="textBoxRestLength.ToolTip" xml:space="preserve">
+    <value>Entrez la longueur d'onde de repos</value>
+  </data>
   <data name="buttonStarVelocity.Text" xml:space="preserve">
     <value>Calculer</value>
   </data>
@@ -166,14 +172,26 @@
   <data name="labelArcsecondAngle.Text" xml:space="preserve">
     <value>Angle des secondes d'arc</value>
   </data>
+  <data name="textBoxArcsecondAngle.ToolTip" xml:space="preserve">
+    <value>Entrez l'angle des secondes d'arc</value>
+  </data>
   <data name="buttonStarDistance.Text" xml:space="preserve">
     <value>Calculer</value>
+  </data>
+  <data name="buttonStarDistance.ToolTip" xml:space="preserve">
+    <value>Cliquez pour calculer la distance des étoiles</value>
   </data>
   <data name="labelCelsius.Text" xml:space="preserve">
     <value>Température Celsius</value>
   </data>
+  <data name="textBoxCelsius.ToolTip" xml:space="preserve">
+    <value>Entrez la température en degrés Celsius</value>
+  </data>
   <data name="buttonKelvinTemp.Text" xml:space="preserve">
     <value>Calculer</value>
+  </data>
+  <data name="buttonKelvinTemp.ToolTip" xml:space="preserve">
+    <value>Cliquez pour calculer la température</value>
   </data>
   <data name="labelBlackholeMass.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 13</value>
@@ -181,8 +199,14 @@
   <data name="labelBlackholeMass.Text" xml:space="preserve">
     <value>Masse du trou noir</value>
   </data>
+  <data name="textBoxBlackholeMass.ToolTip" xml:space="preserve">
+    <value>Entrez dans la masse du trou noir</value>
+  </data>
   <data name="buttonEventHorizon.Text" xml:space="preserve">
     <value>Calculer</value>
+  </data>
+  <data name="buttonEventHorizon.ToolTip" xml:space="preserve">
+    <value>Cliquez pour calculer l'horizon des événements</value>
   </data>
   <data name="groupBoxStarVelocity.Text" xml:space="preserve">
     <value>Vitesse des étoiles</value>
@@ -190,11 +214,20 @@
   <data name="buttonFrench.Text" xml:space="preserve">
     <value>Français</value>
   </data>
+  <data name="buttonFrench.ToolTip" xml:space="preserve">
+    <value>Cliquez pour changer la langue en français</value>
+  </data>
   <data name="buttonEnglish.Text" xml:space="preserve">
     <value>Anglais Royaume-Uni)</value>
   </data>
+  <data name="buttonEnglish.ToolTip" xml:space="preserve">
+    <value>Cliquez pour changer la langue en anglais</value>
+  </data>
   <data name="buttonGerman.Text" xml:space="preserve">
     <value>allemand</value>
+  </data>
+  <data name="buttonGerman.ToolTip" xml:space="preserve">
+    <value>Cliquez pour changer la langue en allemand</value>
   </data>
   <data name="groupBoxStarDistance.Text" xml:space="preserve">
     <value>Distance étoile</value>
@@ -213,6 +246,9 @@
   </data>
   <data name="checkBoxMode.Text" xml:space="preserve">
     <value>Mode nuit désactivé</value>
+  </data>
+  <data name="checkBoxMode.ToolTip" xml:space="preserve">
+    <value>Cliquez pour changer le mode de l'application</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Application Astro Math de Malin</value>

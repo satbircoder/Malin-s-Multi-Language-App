@@ -88,7 +88,7 @@ namespace Malin_s_AstroMath_App.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something Went Wrong Please Try Again.
+        ///   Looks up a localized string similar to Something Went Wrong Please Check Server Running Status .
         /// </summary>
         internal static string crash_message {
             get {

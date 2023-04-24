@@ -117,7 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="menuStripMalin.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dataViewCalculations.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelObservedWaveLength.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelWaveLength.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelArcsecondAngle.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelCelsius.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelBlackholeMass.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="statusStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBoxStarVelocity.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="buttonEnglish.Text" xml:space="preserve">
     <value>English(UK)</value>
+  </data>
+  <data name="groupBoxStarDistance.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBoxKelvin.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxUnits.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxPower.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxExpo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxMultiply.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBoxEventHorizon.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="contextMenuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="contextMenuStrip2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

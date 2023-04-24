@@ -117,11 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="buttonKelvinTemp.ToolTip" xml:space="preserve">
-    <value />
+    <value>Click To Calculate Temperature</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStripMalin.TabIndex" type="System.Int32, mscorlib">
@@ -134,8 +131,8 @@
   <data name="labelWaveLength.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
-  <data name="textBoxRestLength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 93</value>
+  <data name="groupBoxStarDistance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;menuStripMalin.Name" xml:space="preserve">
     <value>menuStripMalin</value>
@@ -145,9 +142,6 @@
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBoxStarVelocity.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="menuStripMalin.Size" type="System.Drawing.Size, System.Drawing">
     <value>800, 24</value>
@@ -164,8 +158,8 @@
   <data name="textBoxRestLength.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="contextMenuStrip2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="labelBlackholeMass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="groupBoxKelvin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -183,7 +177,11 @@
     <value>85, 32</value>
   </data>
   <data name="textBoxCelsius.ToolTip" xml:space="preserve">
-    <value />
+    <value>Enter Temperature in Celcius</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelObservedWaveLength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBoxMode.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -200,17 +198,20 @@
   <data name="&gt;&gt;textBoxObsLength.Parent" xml:space="preserve">
     <value>groupBoxStarVelocity</value>
   </data>
-  <data name="textBoxMultiply.Text" xml:space="preserve">
-    <value>x</value>
+  <data name="textBoxRestLength.ToolTip" xml:space="preserve">
+    <value>Enter Rest Wavelength</value>
   </data>
   <data name="labelObservedWaveLength.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelWaveLength.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;textBoxPower.Name" xml:space="preserve">
+    <value>textBoxPower</value>
   </data>
   <data name="&gt;&gt;buttonStarDistance.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxMultiply.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;buttonStarVelocity.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -236,6 +237,9 @@
   <data name="groupBoxEventHorizon.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
+  <data name="labelWaveLength.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;StarVelocityColumn.Name" xml:space="preserve">
     <value>StarVelocityColumn</value>
   </data>
@@ -251,7 +255,6 @@
   <data name="&gt;&gt;StarVelocityColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonEnglish.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -263,12 +266,6 @@
   </data>
   <data name="textBoxUnits.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="textBoxObsLength.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonEventHorizon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="textBoxMultiply.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 20</value>
@@ -307,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="textBoxBlackholeMass.ToolTip" xml:space="preserve">
-    <value />
+    <value>Enter Blachole Mass </value>
   </data>
   <data name="&gt;&gt;resetToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -384,12 +381,6 @@
   <data name="menuStripMalin.Text" xml:space="preserve">
     <value>menuStripMalin</value>
   </data>
-  <data name="textBoxArcsecondAngle.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="checkBoxMode.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;groupBoxEventHorizon.Name" xml:space="preserve">
     <value>groupBoxEventHorizon</value>
   </data>
@@ -426,8 +417,8 @@
   <data name="&gt;&gt;dataViewCalculations.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="StatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
+  <data name="&gt;&gt;textBoxMultiply.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="buttonEnglish.Location" type="System.Drawing.Point, System.Drawing">
     <value>263, 35</value>
@@ -466,7 +457,7 @@
     <value>12, 152</value>
   </data>
   <data name="textBoxArcsecondAngle.ToolTip" xml:space="preserve">
-    <value />
+    <value>Enter Arcseconds Angle</value>
   </data>
   <data name="textBoxCelsius.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -480,8 +471,8 @@
   <data name="buttonEnglish.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="labelBlackholeMass.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+  <data name="textBoxArcsecondAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="textBoxPower.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -489,14 +480,17 @@
   <data name="groupBoxStarVelocity.Text" xml:space="preserve">
     <value>Star Velocity</value>
   </data>
+  <data name="textBoxExpo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelBlackholeMass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="statusStrip1.Text" xml:space="preserve">
     <value>statusStrip1</value>
   </data>
   <data name="labelBlackholeMass.Text" xml:space="preserve">
     <value>Blackhole Mass</value>
-  </data>
-  <data name="textBoxRestLength.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="labelCelsius.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 13</value>
@@ -507,14 +501,14 @@
   <data name="&gt;&gt;textBoxBlackholeMass.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="textBoxMultiply.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
   <data name="&gt;&gt;buttonEventHorizon.Name" xml:space="preserve">
     <value>buttonEventHorizon</value>
   </data>
   <data name="statusStrip1.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="groupBoxStarDistance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;groupBoxStarDistance.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -539,9 +533,6 @@
   </data>
   <data name="textBoxUnits.Text" xml:space="preserve">
     <value>KG</value>
-  </data>
-  <data name="textBoxUnits.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
   </data>
   <data name="labelObservedWaveLength.Text" xml:space="preserve">
     <value>Observed Wavelength</value>
@@ -585,14 +576,20 @@
   <data name="buttonGerman.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="selectColorToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Click To Change App Color</value>
+  </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 516</value>
+  </data>
+  <data name="textBoxRestLength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 93</value>
   </data>
   <data name="&gt;&gt;buttonStarVelocity.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="buttonStarDistance.ToolTip" xml:space="preserve">
-    <value />
+    <value>Click To Calculate Star Distance</value>
   </data>
   <data name="checkBoxMode.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -615,11 +612,11 @@
   <data name="&gt;&gt;textBoxPower.Parent" xml:space="preserve">
     <value>groupBoxEventHorizon</value>
   </data>
-  <data name="labelBlackholeMass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
-  </data>
   <data name="buttonGerman.Location" type="System.Drawing.Point, System.Drawing">
     <value>617, 35</value>
+  </data>
+  <data name="&gt;&gt;buttonGerman.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="buttonGerman.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -630,8 +627,8 @@
   <data name="groupBoxStarDistance.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="labelObservedWaveLength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="labelBlackholeMass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
   </data>
   <data name="&gt;&gt;TemperatureColumn.Name" xml:space="preserve">
     <value>TemperatureColumn</value>
@@ -666,11 +663,14 @@
   <data name="&gt;&gt;labelWaveLength.Name" xml:space="preserve">
     <value>labelWaveLength</value>
   </data>
-  <data name="&gt;&gt;groupBoxStarVelocity.Name" xml:space="preserve">
-    <value>groupBoxStarVelocity</value>
+  <data name="&gt;&gt;textBoxRestLength.Name" xml:space="preserve">
+    <value>textBoxRestLength</value>
   </data>
-  <data name="buttonFrench.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="buttonEventHorizon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxMode.ToolTip" xml:space="preserve">
+    <value>Click To Change App Mode</value>
   </data>
   <data name="&gt;&gt;labelCelsius.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -680,6 +680,9 @@
   </data>
   <data name="buttonFrench.Text" xml:space="preserve">
     <value>French</value>
+  </data>
+  <data name="buttonFrench.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;dataViewCalculations.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -698,12 +701,6 @@
   </data>
   <data name="&gt;&gt;textBoxBlackholeMass.Name" xml:space="preserve">
     <value>textBoxBlackholeMass</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEventHorizon.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxPower.Name" xml:space="preserve">
-    <value>textBoxPower</value>
   </data>
   <data name="buttonGerman.Text" xml:space="preserve">
     <value>German</value>
@@ -735,6 +732,9 @@
   <data name="&gt;&gt;textBoxRestLength.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="resetToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Click To Reset App Format</value>
+  </data>
   <data name="labelCelsius.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -744,8 +744,11 @@
   <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
     <value>statusStrip1</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="buttonEventHorizon.ToolTip" xml:space="preserve">
-    <value />
+    <value>Click To Calculate Event Horizon</value>
   </data>
   <data name="labelWaveLength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -755,6 +758,9 @@
   </data>
   <data name="&gt;&gt;textBoxMultiply.Name" xml:space="preserve">
     <value>textBoxMultiply</value>
+  </data>
+  <data name="StatusBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
   </data>
   <data name="checkBoxMode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -808,13 +814,13 @@
     <value>groupBoxKelvin</value>
   </data>
   <data name="buttonFrench.ToolTip" xml:space="preserve">
-    <value />
+    <value>Click To Change Language to French</value>
   </data>
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="textBoxExpo.ToolTip" xml:space="preserve">
-    <value />
+  <data name="textBoxObsLength.ToolTip" xml:space="preserve">
+    <value>Enter Observed Wavelength</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -856,7 +862,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="buttonStarVelocity.ToolTip" xml:space="preserve">
-    <value>Click To Calculate</value>
+    <value>Click To Calculate Star Velocity</value>
   </data>
   <data name="&gt;&gt;groupBoxEventHorizon.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -882,7 +888,7 @@
   <data name="textBoxUnits.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 32</value>
   </data>
-  <data name="textBoxMultiply.ToolTip" xml:space="preserve">
+  <data name="groupBoxStarVelocity.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;checkBoxMode.Type" xml:space="preserve">
@@ -900,6 +906,9 @@
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
+  <data name="&gt;&gt;groupBoxStarVelocity.Name" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
   <data name="&gt;&gt;textBoxUnits.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -907,7 +916,7 @@
     <value>Night Mode Off</value>
   </data>
   <data name="buttonEnglish.ToolTip" xml:space="preserve">
-    <value />
+    <value>Click To Change Language To English</value>
   </data>
   <data name="dataViewCalculations.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -963,8 +972,8 @@
   <data name="&gt;&gt;EventHorizonColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxRestLength.Name" xml:space="preserve">
-    <value>textBoxRestLength</value>
+  <data name="&gt;&gt;groupBoxEventHorizon.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="labelArcsecondAngle.ToolTip" xml:space="preserve">
     <value />
@@ -994,7 +1003,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="buttonGerman.ToolTip" xml:space="preserve">
-    <value />
+    <value>Click To Change Language to German</value>
   </data>
   <data name="labelObservedWaveLength.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 13</value>
@@ -1010,9 +1019,6 @@
   </data>
   <data name="&gt;&gt;textBoxBlackholeMass.Parent" xml:space="preserve">
     <value>groupBoxEventHorizon</value>
-  </data>
-  <data name="&gt;&gt;textBoxMultiply.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -1032,8 +1038,8 @@
   <data name="buttonFrench.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBoxUnits.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
   <data name="resetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 20</value>
@@ -1065,8 +1071,8 @@
   <data name="checkBoxMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;buttonGerman.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;labelCelsius.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1101,8 +1107,8 @@
   <data name="labelBlackholeMass.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="labelBlackholeMass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;textBoxExpo.Name" xml:space="preserve">
+    <value>textBoxExpo</value>
   </data>
   <data name="&gt;&gt;buttonStarDistance.Parent" xml:space="preserve">
     <value>groupBoxStarDistance</value>
@@ -1116,8 +1122,8 @@
   <data name="&gt;&gt;menuStripMalin.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBoxExpo.Name" xml:space="preserve">
-    <value>textBoxExpo</value>
+  <data name="contextMenuStrip2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="labelCelsius.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -1136,6 +1142,9 @@
   </metadata>
   <metadata name="TemperatureColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-GB</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
