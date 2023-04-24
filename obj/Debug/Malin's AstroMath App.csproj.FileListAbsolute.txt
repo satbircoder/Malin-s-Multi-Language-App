@@ -18,3 +18,10 @@ E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Debug\en-GB\Malin's AstroMath App.resources.dll
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin_s_AstroMath_App.AstroMathApp.en-GB.resources
 E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\en-GB\Malin's AstroMath App.resources.dll
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin_s_AstroMath_App.Properties.stringtranslation.resources
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Debug\fr\Malin's AstroMath App.resources.dll
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin_s_AstroMath_App.Properties.stringtranslation.fr.resources
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\fr\Malin's AstroMath App.resources.dll
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\bin\Debug\de\Malin's AstroMath App.resources.dll
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\Malin_s_AstroMath_App.Properties.stringtranslation.de.resources
+E:\Diploma\Complex Data Structures\Assessment_2\Malin's AstroMath App\obj\Debug\de\Malin's AstroMath App.resources.dll

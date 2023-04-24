@@ -117,104 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="selectColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 20</value>
+  <data name="Basic Color" xml:space="preserve">
+    <value>Basic Color</value>
   </data>
-  <data name="selectColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Choisissez la couleur</value>
+  <data name="Change Language Warning" xml:space="preserve">
+    <value>Are you sure you want to change the language all results will be lost</value>
   </data>
-  <data name="resetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 20</value>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
   </data>
-  <data name="resetToolStripMenuItem.Text" xml:space="preserve">
-    <value>Réinitialiser le format</value>
+  <data name="crash message" xml:space="preserve">
+    <value>Something Went Wrong Please Try Again</value>
   </data>
-  <data name="StarVelocityColumn.HeaderText" xml:space="preserve">
-    <value>Vitesse des étoiles</value>
+  <data name="Custom Color" xml:space="preserve">
+    <value>Custom Color</value>
   </data>
-  <data name="StarDistanceColumn.HeaderText" xml:space="preserve">
-    <value>Distance étoile</value>
+  <data name="empty input" xml:space="preserve">
+    <value>Please enter the values</value>
   </data>
-  <data name="TemperatureColumn.HeaderText" xml:space="preserve">
-    <value>Conversion de température</value>
+  <data name="invalid input" xml:space="preserve">
+    <value>Invalid Input Please Try Again</value>
   </data>
-  <data name="EventHorizonColumn.HeaderText" xml:space="preserve">
-    <value>Horizon des événements</value>
+  <data name="invalid key" xml:space="preserve">
+    <value>Invalid Key Pressed Please Try Again</value>
   </data>
-  <data name="labelObservedWaveLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 13</value>
+  <data name="Kelvin" xml:space="preserve">
+    <value>Kelvin</value>
   </data>
-  <data name="labelObservedWaveLength.Text" xml:space="preserve">
-    <value>Longueur d'onde observée</value>
+  <data name="Meters" xml:space="preserve">
+    <value>Meters</value>
   </data>
-  <data name="labelWaveLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
+  <data name="meters per second" xml:space="preserve">
+    <value>meters per second</value>
   </data>
-  <data name="labelWaveLength.Text" xml:space="preserve">
-    <value>Longueur d'onde de repos</value>
+  <data name="Night Mode Off" xml:space="preserve">
+    <value>Night Mode Off</value>
   </data>
-  <data name="buttonStarVelocity.Text" xml:space="preserve">
-    <value>Calculer</value>
+  <data name="Night Mode On" xml:space="preserve">
+    <value>Night Mode On</value>
   </data>
-  <data name="buttonStarVelocity.ToolTip" xml:space="preserve">
-    <value>Cliquez pour calculer</value>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
   </data>
-  <data name="labelArcsecondAngle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 13</value>
+  <data name="Operation Cancel" xml:space="preserve">
+    <value>User has Cancelled the operation</value>
   </data>
-  <data name="labelArcsecondAngle.Text" xml:space="preserve">
-    <value>Angle des secondes d'arc</value>
+  <data name="Parsecs" xml:space="preserve">
+    <value>Parsecs</value>
   </data>
-  <data name="buttonStarDistance.Text" xml:space="preserve">
-    <value>Calculer</value>
+  <data name="Success Message" xml:space="preserve">
+    <value>Operation Successfully Completed</value>
   </data>
-  <data name="labelCelsius.Text" xml:space="preserve">
-    <value>Température Celsius</value>
+  <data name="System Information" xml:space="preserve">
+    <value>System Information</value>
   </data>
-  <data name="buttonKelvinTemp.Text" xml:space="preserve">
-    <value>Calculer</value>
-  </data>
-  <data name="labelBlackholeMass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
-  </data>
-  <data name="labelBlackholeMass.Text" xml:space="preserve">
-    <value>Masse du trou noir</value>
-  </data>
-  <data name="buttonEventHorizon.Text" xml:space="preserve">
-    <value>Calculer</value>
-  </data>
-  <data name="groupBoxStarVelocity.Text" xml:space="preserve">
-    <value>Vitesse des étoiles</value>
-  </data>
-  <data name="buttonFrench.Text" xml:space="preserve">
-    <value>Français</value>
-  </data>
-  <data name="buttonEnglish.Text" xml:space="preserve">
-    <value>Anglais Royaume-Uni)</value>
-  </data>
-  <data name="buttonGerman.Text" xml:space="preserve">
-    <value>allemand</value>
-  </data>
-  <data name="groupBoxStarDistance.Text" xml:space="preserve">
-    <value>Distance étoile</value>
-  </data>
-  <data name="groupBoxKelvin.Text" xml:space="preserve">
-    <value>Calculatrice Kelvin</value>
-  </data>
-  <data name="groupBoxEventHorizon.Text" xml:space="preserve">
-    <value>Horizon des événements</value>
-  </data>
-  <data name="checkBoxMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 129</value>
-  </data>
-  <data name="checkBoxMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 23</value>
-  </data>
-  <data name="checkBoxMode.Text" xml:space="preserve">
-    <value>Mode nuit désactivé</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Application Astro Math de Malin</value>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
   </data>
 </root>
