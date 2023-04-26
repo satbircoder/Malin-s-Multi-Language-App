@@ -34,6 +34,10 @@ namespace Malin_s_AstroMath_App
         {
             dataViewCalculations.AllowUserToAddRows = false;
         }
+        private void AstroMathApp_MouseMove(object sender, MouseEventArgs e)
+        {
+            StatusBar.Text = string.Empty;
+        }
         #endregion  Connection and Load
 
         #region StartVelocity
@@ -44,43 +48,44 @@ namespace Malin_s_AstroMath_App
                 try
                 {
                     var velocity = connection().StarVelocity(double.Parse(textBoxObsLength.Text), double.Parse(textBoxRestLength.Text));
-                if (velocity.Item2.Equals(true))//Returning true or false from DLL 
-                {
-                   
-                    for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)//Loop through rows to
-                                                                              //check for empty cell and will add rows if required
+                    if (velocity.Item2.Equals(true))//Returning true or false from DLL 
                     {
-                        if (dataViewCalculations.Rows.Count == 0)// if no rows add one first then add will data
+
+                        for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)//Loop through rows to
+                                                                                  //check for empty cell and will add rows if required
                         {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i, newRow);
-                            dataViewCalculations.Rows[i].Cells[0].Value = (velocity.Item1 +" "+ stringtranslation.meters_per_second);
-                            break;
+                            if (dataViewCalculations.Rows.Count == 0)// if no rows add one first then add will data
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i, newRow);
+                                dataViewCalculations.Rows[i].Cells[0].Value = (velocity.Item1 + " " + stringtranslation.meters_per_second);
+                                break;
+                            }
+                            if (dataViewCalculations.Rows[i].Cells[0].Value == null)//if cell is empty then just add the data
+                            {
+                                dataViewCalculations.Rows[i].Cells[0].Value = (velocity.Item1 + " " + stringtranslation.meters_per_second);
+                                break;
+                            }
+                            if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[0].Value != null)//if all rows are full then add row and data both
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i + 1, newRow);
+                                dataViewCalculations.Rows[i + 1].Cells[0].Value = (velocity.Item1 + " " + stringtranslation.meters_per_second);
+                                break;
+                            }
                         }
-                        if (dataViewCalculations.Rows[i].Cells[0].Value == null)//if cell is empty then just add the data
-                        {
-                            dataViewCalculations.Rows[i].Cells[0].Value = (velocity.Item1 + " " + stringtranslation.meters_per_second);
-                            break;
-                        }
-                        if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[0].Value != null)//if all rows are full then add row and data both
-                        {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i + 1, newRow);
-                            dataViewCalculations.Rows[i + 1].Cells[0].Value = (velocity.Item1 + " " + stringtranslation.meters_per_second);
-                            break;
-                        }
+                        textBoxObsLength.Clear();
+                        textBoxRestLength.Clear();
+                        StatusBar.Text = stringtranslation.Success_Message;
                     }
-                    
-                    StatusBar.Text = stringtranslation.Success_Message;
+                    else
+                    {
+                        StatusBar.Text = stringtranslation.invalid_input;
+                    }
                 }
-                else
-                {
-                    StatusBar.Text = stringtranslation.invalid_input;
-                }
-                }
-                    catch (Exception)
+                catch (Exception)
                 {
                     StatusBar.Text = stringtranslation.crash_message;//string translation is resource file
                                                                      //and have different string values stored in it and translated in different language 
@@ -93,51 +98,52 @@ namespace Malin_s_AstroMath_App
             }
         }
         #endregion Star Velocity
-        
+
         #region Star Distance 
-        private void buttonStarDistance_Click(object sender, EventArgs e)
+        private void buttonStarDistance_Click(object sender, EventArgs e)// This button click methods connects to the server and peforms required 
+                                                                         //functionality for Star Distance and return appropriate feedback messages 
         {
             if (textBoxArcsecondAngle.Text != "")
             {
                 try
                 {
                     var starDis = connection().StarDistance(double.Parse(textBoxArcsecondAngle.Text));
-                if (starDis.Item2.Equals(true))
-                {
-                   
-
-                    for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)
+                    if (starDis.Item2.Equals(true))
                     {
-                        if (dataViewCalculations.Rows.Count == 0)
-                        {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i, newRow);
-                            dataViewCalculations.Rows[i].Cells[1].Value = (starDis.Item1 + " "+stringtranslation.Parsecs);
-                            break;
-                        }
-                        if (dataViewCalculations.Rows[i].Cells[1].Value == null)
-                        {
-                            dataViewCalculations.Rows[i].Cells[1].Value = (starDis.Item1 + " " + stringtranslation.Parsecs);
-                            break;
-                        }
 
-                        if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[1].Value != null)
+
+                        for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)
                         {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i + 1, newRow);
-                            dataViewCalculations.Rows[i + 1].Cells[1].Value = (starDis.Item1 + " " + stringtranslation.Parsecs);
-                            break;
+                            if (dataViewCalculations.Rows.Count == 0)
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i, newRow);
+                                dataViewCalculations.Rows[i].Cells[1].Value = (starDis.Item1 + " " + stringtranslation.Parsecs);
+                                break;
+                            }
+                            if (dataViewCalculations.Rows[i].Cells[1].Value == null)
+                            {
+                                dataViewCalculations.Rows[i].Cells[1].Value = (starDis.Item1 + " " + stringtranslation.Parsecs);
+                                break;
+                            }
+
+                            if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[1].Value != null)
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i + 1, newRow);
+                                dataViewCalculations.Rows[i + 1].Cells[1].Value = (starDis.Item1 + " " + stringtranslation.Parsecs);
+                                break;
+                            }
                         }
+                        textBoxArcsecondAngle.Clear();
+                        StatusBar.Text = stringtranslation.Success_Message;
                     }
-                    
-                    StatusBar.Text = stringtranslation.Success_Message;
-                }
-                else
-                {
-                    StatusBar.Text = stringtranslation.invalid_input;
-                }
+                    else
+                    {
+                        StatusBar.Text = stringtranslation.invalid_input;
+                    }
                 }
                 catch (Exception)
                 {
@@ -162,41 +168,41 @@ namespace Malin_s_AstroMath_App
                 {
 
                     var kelvinTemp = connection().KelvinTemperature(double.Parse(textBoxCelsius.Text));
-                if (kelvinTemp.Item2.Equals(true))
-                {
-                   
-                    for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)
+                    if (kelvinTemp.Item2.Equals(true))
                     {
-                        if (dataViewCalculations.Rows.Count == 0)
-                        {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i, newRow);
-                            dataViewCalculations.Rows[i].Cells[2].Value = (kelvinTemp.Item1 + " " +stringtranslation.Kelvin);
-                            break;
-                        }
-                        if (dataViewCalculations.Rows[i].Cells[2].Value == null)
-                        {
-                            dataViewCalculations.Rows[i].Cells[2].Value = (kelvinTemp.Item1 + " " + stringtranslation.Kelvin);
-                            break;
-                        }
 
-                        if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[2].Value != null)
+                        for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)
                         {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i + 1, newRow);
-                            dataViewCalculations.Rows[i + 1].Cells[2].Value = (kelvinTemp.Item1 + " " + stringtranslation.Kelvin);
-                            break;
+                            if (dataViewCalculations.Rows.Count == 0)
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i, newRow);
+                                dataViewCalculations.Rows[i].Cells[2].Value = (kelvinTemp.Item1 + " " + stringtranslation.Kelvin);
+                                break;
+                            }
+                            if (dataViewCalculations.Rows[i].Cells[2].Value == null)
+                            {
+                                dataViewCalculations.Rows[i].Cells[2].Value = (kelvinTemp.Item1 + " " + stringtranslation.Kelvin);
+                                break;
+                            }
+
+                            if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[2].Value != null)
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i + 1, newRow);
+                                dataViewCalculations.Rows[i + 1].Cells[2].Value = (kelvinTemp.Item1 + " " + stringtranslation.Kelvin);
+                                break;
+                            }
                         }
+                        textBoxCelsius.Clear();
+                        StatusBar.Text = stringtranslation.Success_Message;
                     }
-                    
-                StatusBar.Text = stringtranslation.Success_Message;
-                }
-                else
-                {
-                    StatusBar.Text = stringtranslation.invalid_input;
-                }
+                    else
+                    {
+                        StatusBar.Text = stringtranslation.invalid_input;
+                    }
                 }
                 catch (Exception)
                 {
@@ -219,44 +225,45 @@ namespace Malin_s_AstroMath_App
                 try
                 {
                     var blackholeInput = double.Parse(textBoxBlackholeMass.Text) * Math.Pow(10, double.Parse(textBoxPower.Text));
-                var blkholeMass = connection().EventHorizon(blackholeInput);
-                if (blkholeMass.Item2.Equals(true))
-                {
-                    
-
-                    var blkholeResult = string.Format("{0:E2}", blkholeMass.Item1);
-                    for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)
+                    var blkholeMass = connection().EventHorizon(blackholeInput);
+                    if (blkholeMass.Item2.Equals(true))
                     {
-                        if (dataViewCalculations.Rows.Count == 0)
-                        {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i, newRow);
-                            dataViewCalculations.Rows[i].Cells[3].Value = (blkholeResult + " "+stringtranslation.Meters);
-                            break;
-                        }
-                        if (dataViewCalculations.Rows[i].Cells[3].Value == null)
-                        {
-                            dataViewCalculations.Rows[i].Cells[3].Value = (blkholeResult + " " + stringtranslation.Meters);
-                            break;
-                        }
 
-                        if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[3].Value != null)
+
+                        var blkholeResult = string.Format("{0:E2}", blkholeMass.Item1);
+                        for (int i = 0; i <= dataViewCalculations.Rows.Count; i++)
                         {
-                            DataGridViewRow newRow = new DataGridViewRow();
-                            newRow.CreateCells(dataViewCalculations);
-                            dataViewCalculations.Rows.Insert(i + 1, newRow);
-                            dataViewCalculations.Rows[i + 1].Cells[3].Value = (blkholeResult + " " + stringtranslation.Meters);
-                            break;
+                            if (dataViewCalculations.Rows.Count == 0)
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i, newRow);
+                                dataViewCalculations.Rows[i].Cells[3].Value = (blkholeResult + " " + stringtranslation.Meters);
+                                break;
+                            }
+                            if (dataViewCalculations.Rows[i].Cells[3].Value == null)
+                            {
+                                dataViewCalculations.Rows[i].Cells[3].Value = (blkholeResult + " " + stringtranslation.Meters);
+                                break;
+                            }
+
+                            if (i == dataViewCalculations.Rows.Count - 1 && dataViewCalculations.Rows[i].Cells[3].Value != null)
+                            {
+                                DataGridViewRow newRow = new DataGridViewRow();
+                                newRow.CreateCells(dataViewCalculations);
+                                dataViewCalculations.Rows.Insert(i + 1, newRow);
+                                dataViewCalculations.Rows[i + 1].Cells[3].Value = (blkholeResult + " " + stringtranslation.Meters);
+                                break;
+                            }
                         }
+                        textBoxBlackholeMass.Clear();
+                        textBoxPower.Clear();
+                        StatusBar.Text = stringtranslation.Success_Message;
                     }
-                   
-                    StatusBar.Text = stringtranslation.Success_Message;
-                }
-                else
-                {
-                    StatusBar.Text = stringtranslation.invalid_input;
-                }
+                    else
+                    {
+                        StatusBar.Text = stringtranslation.invalid_input;
+                    }
                 }
                 catch (Exception)
                 {
@@ -307,7 +314,7 @@ namespace Malin_s_AstroMath_App
         {
             ColorDialog colorDialog = new ColorDialog();
             var result = colorDialog.ShowDialog();
-            
+
             if (result == DialogResult.OK)
             {
                 BackgroundImage = null;
@@ -321,6 +328,7 @@ namespace Malin_s_AstroMath_App
                 }
                 menuStripMalin.ForeColor = Color.Black;
                 dataViewCalculations.ForeColor = Color.Black;
+                checkBoxMode.ForeColor = Color.White;
             }
         }
         private void ResetFormat()
@@ -339,11 +347,12 @@ namespace Malin_s_AstroMath_App
             {
                 buttons.ForeColor = Color.Black;
             }
-            StatusBar.BackColor = Color.Silver;
+            StatusBar.BackColor = Color.Silver;//some color are mannually controlled
             StatusBar.ForeColor = Color.Black;
             dataViewCalculations.BackgroundColor = Color.Silver;
             menuStripMalin.ForeColor = Color.Black;
             dataViewCalculations.ForeColor = Color.Black;
+            checkBoxMode.ForeColor = Color.White;
         }
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -357,9 +366,9 @@ namespace Malin_s_AstroMath_App
         #region Language Select
         private void ChangeLanguage(string language)
         {
-            MessageBoxManager.Yes = stringtranslation.Yes;
+            MessageBoxManager.Yes = stringtranslation.Yes;// This messagebox Manager is a third party class that allows to change the buttons values of messagebox
             MessageBoxManager.No = stringtranslation.No;
-            MessageBoxManager.Register();
+            MessageBoxManager.Register();// need to register these values every to use it
             var result = MessageBox.Show(stringtranslation.Change_Language_Warning, stringtranslation.System_Information, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
@@ -375,7 +384,7 @@ namespace Malin_s_AstroMath_App
                         Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
                         break;
                 }
-                MessageBoxManager.Unregister();
+                MessageBoxManager.Unregister();// similarly unregister it after every use
                 Controls.Clear();
                 InitializeComponent();
             }
@@ -411,12 +420,12 @@ namespace Malin_s_AstroMath_App
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true;
-                StatusBar.Text = Properties.stringtranslation.invalid_key;
+                StatusBar.Text = stringtranslation.invalid_key;
             }
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
-                StatusBar.Text = Properties.stringtranslation.invalid_key; 
+                StatusBar.Text = stringtranslation.invalid_key;
             }
         }
 
@@ -444,9 +453,20 @@ namespace Malin_s_AstroMath_App
         {
             TextBoxKeyPress(sender, e);
         }
-
+        private void textBoxPower_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            var textbox = (TextBox)sender;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+                StatusBar.Text = stringtranslation.invalid_key;
+            }
+            if (e.KeyChar == '-' && (textbox.SelectionStart != 0 || textbox.Text.Contains("-"))) // restrict minus symbol to first index only
+            {
+                e.Handled = true;
+                StatusBar.Text = stringtranslation.invalid_key;
+            }
+        }
         #endregion TextBox Input Validation
-
-       
     }
 }

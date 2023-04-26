@@ -163,7 +163,7 @@
     <value>L'utilisateur a annulé l'opération</value>
   </data>
   <data name="Parsecs" xml:space="preserve">
-    <value>Parsecondes</value>
+    <value>Parsec</value>
   </data>
   <data name="Success Message" xml:space="preserve">
     <value>Operation complétée avec succès</value>
