@@ -446,7 +446,22 @@ namespace Malin_s_AstroMath_App
 
         private void textBoxCelsius_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TextBoxKeyPress(sender, e);
+            var textbox = (TextBox)sender;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '-') && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+                StatusBar.Text = stringtranslation.invalid_key;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+                StatusBar.Text = stringtranslation.invalid_key;
+            }
+            if (e.KeyChar == '-' && (textbox.SelectionStart != 0 || textbox.Text.Contains("-"))) // restrict minus symbol to first index only
+            {
+                e.Handled = true;
+                StatusBar.Text = stringtranslation.invalid_key;
+            }
         }
 
         private void textBoxBlackholeMass_KeyPress(object sender, KeyPressEventArgs e)
